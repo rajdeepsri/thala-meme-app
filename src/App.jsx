@@ -71,7 +71,7 @@ const App = () => {
           placeholder="Try entering Thallium..."
         />
         <button type="button" onClick={handleSearch}>
-          Search
+          Check
         </button>
       </div>
       {isThala && (
