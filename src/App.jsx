@@ -56,6 +56,9 @@ const App = () => {
       setThalaText(`${trimmedSearchTerm} = 7 words`);
       return;
     }
+
+    setIsThala(false);
+    setThalaText("");
   };
 
   return (
