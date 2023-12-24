@@ -71,7 +71,7 @@ const App = () => {
       {thalaText && (
         <div className="thala_div">
           <p className="thala_text">{thalaText}</p>
-          <video className="thala_video" src={thalaVideo} autoPlay loop muted />
+          <video className="thala_video" src={thalaVideo} autoPlay loop />
           <p className="reason_text">Thala for a Reason</p>
         </div>
       )}
