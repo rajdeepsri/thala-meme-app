@@ -16,19 +16,6 @@ const App = () => {
       return;
     }
 
-    // check if the length of word is 7
-    if (trimmedSearchTerm.length === 7 && !trimmedSearchTerm.includes(" ")) {
-      setThalaText(`${searchTerm} = 7 characters`);
-      return;
-    }
-
-    // check if 7 words entered
-    const searchTermArray = trimmedSearchTerm.split(" ");
-    if (searchTermArray.length === 7) {
-      setThalaText(`${trimmedSearchTerm} = 7 words`);
-      return;
-    }
-
     // if searchTerm is a number, check if its divisible by 7
     if (/^\d+$/.test(trimmedSearchTerm)) {
       // sum case
@@ -49,6 +36,19 @@ const App = () => {
       } else {
         setThalaText("");
       }
+      return;
+    }
+
+    // check if the length of word is 7
+    if (trimmedSearchTerm.length === 7 && !trimmedSearchTerm.includes(" ")) {
+      setThalaText(`${searchTerm} = 7 characters`);
+      return;
+    }
+
+    // check if 7 words entered
+    const searchTermArray = trimmedSearchTerm.split(" ");
+    if (searchTermArray.length === 7) {
+      setThalaText(`${trimmedSearchTerm} = 7 words`);
       return;
     }
 
