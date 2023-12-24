@@ -62,7 +62,7 @@ const App = () => {
           type="text"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          placeholder="Try entering Thallium..."
+          placeholder="Try typing in Thallium..."
         />
         <button type="button" onClick={handleCheck}>
           Check
