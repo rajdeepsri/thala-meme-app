@@ -1,8 +1,20 @@
-# React + Vite
+# Thala Meme App - MS Dhoni viral "bole jo koyal" meme
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![ss.png](https://i.postimg.cc/mrDgsV3f/ss.png)](https://postimg.cc/Yv5HN6yb)
 
-Currently, two official plugins are available:
+## Installation
+- download the repo and then open the folder in VScode.
+- in the terminal, run ```npm install```
+- to run the development server, run ```npm run dev```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Packages used
+- react : 18.2.0
+- sass : 1.69.5
+ 
+## Functionality
+- Try entering a number whose sum of digits is divisible by 7.
+- Try entering a word of character length 7.
+- Try writing a sentence of 7 words.
+
+## Live Demo
+- https://thala-meme-app.vercel.app/
