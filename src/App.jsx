@@ -52,7 +52,10 @@ const App = () => {
       return;
     }
 
-    setThalaText("");
+    setThalaText("Try Again");
+    setTimeout(() => {
+      setThalaText("");
+    }, 2500);
   };
 
   return (
@@ -71,8 +74,19 @@ const App = () => {
       {thalaText && (
         <div className="thala_div">
           <p className="thala_text">{thalaText}</p>
-          <video className="thala_video" src={thalaVideo} autoPlay loop />
-          <p className="reason_text">Thala for a Reason</p>
+          {thalaText === "Try Again" ? (
+            <p
+              className="thala_text"
+              style={{ fontSize: "1.5rem", marginTop: "1rem" }}
+            >
+              Think of something related to 7...
+            </p>
+          ) : (
+            <>
+              <video className="thala_video" src={thalaVideo} autoPlay loop />
+              <p className="reason_text">Thala for a Reason</p>
+            </>
+          )}
         </div>
       )}
       <p className="made_by">
